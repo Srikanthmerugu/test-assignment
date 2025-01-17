@@ -1,0 +1,11 @@
+.header-container{
+    background-color: var(--background-light);
+    width: 100vw;
+} 
+.header-container img{
+width: 100px;
+color: white;
+height: 60px;
+padding: 5px;
+
+}

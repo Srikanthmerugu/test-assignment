@@ -15,7 +15,10 @@ import {
   MdGroups,
   MdMarketplace,
 } from "react-icons/md";
-import { BsShop } from "react-icons/bs";
+import { BiUpArrowCircle } from "react-icons/bi";
+
+import { BsShop,BsStars } from "react-icons/bs";
+
 
 import { BiHelpCircle } from "react-icons/bi";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -54,6 +57,7 @@ const Sidebar = () => {
       </div>
       <nav className="nav-links">
         <ul>
+            <div className="Profile-main-section">
           <li className="nav-item">
             <Link to="/library">
               <span className="nav-icon">
@@ -80,8 +84,8 @@ const Sidebar = () => {
               {isOpen && <span className="nav-text">Hosted Sessions</span>}
             </Link>
           </li>
-
-          <li className="nav-item">
+          </div>
+<div><li className="nav-item create-Battle">
             <Link to="/battle">
               <span className="nav-icon">
                 <FaBrain />
@@ -89,6 +93,11 @@ const Sidebar = () => {
               {isOpen && <span className="nav-text">Battle of the Brains</span>}
             </Link>
           </li>
+          </div>
+          
+
+          <div className="Profile-main-section">
+
           <li className="nav-item">
             <Link to="/groups">
               <span className="nav-icon">
@@ -105,6 +114,10 @@ const Sidebar = () => {
               {isOpen && <span className="nav-text">Marketplace</span>}
             </Link>
           </li>
+          </div>
+
+          <div className="Profile-main-section">
+
 
           <li className="nav-item">
             <Link to="/rewards">
@@ -166,14 +179,39 @@ const Sidebar = () => {
               {isOpen && <span className="nav-text">Logout</span>}
             </Link>
           </li>
+          </div>
         </ul>
       </nav>
       {/* Other Links */}
-      {isOpen && <div className="other-links">At your service</div>}
+      {isOpen && <div className="other-links">
+        
+      
+        
+        <div className="Profile-main-section">
+          <li className="nav-item">
+            <Link to="/library">
+              <span className="nav-icon">
+                <BsStars />
+              </span>
+              {isOpen && <span className="nav-text">At your service</span>}
+            </Link>
+          </li>
+        
+        
+        </div>
+        </div>}
+
+
+
+
+
+
 
       {isOpen && (
         <div className="upgrade-section">
-          <button className="upgrade-button">Upgrade</button>
+          <button className="upgrade-button">
+            <span><BiUpArrowCircle />
+            </span>Upgrade</button>
           <button className="refer-button">
             Refer a friend & earn more Coins
           </button>

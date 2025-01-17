@@ -3,14 +3,14 @@
   --primary-color: #6e5efb; 
   --secondary-color: #ffcc00; 
   --text-color: #ffffff; 
-  --background-dark: #1e1e1e; 
+  --background-dark: black; 
   --background-light: #252525; 
   --accent-color: #04ba70; 
   --danger-color: #ff4d4f; 
 
   /* Fonts */
   --font-family: 'Roboto', sans-serif;
-  --font-size-small: 12px;
+  --font-size-small: 11px;
   --font-size-medium: 16px;
   --font-size-large: 20px;
 
@@ -23,6 +23,10 @@ body, html {
   font-family: var(--font-family);
   color: var(--text-color);
   background-color: var(--background-dark);
+  
+}
+::-webkit-scrollbar {
+  width: 1px;
 }
 
 button {

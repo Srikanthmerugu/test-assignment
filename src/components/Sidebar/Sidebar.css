@@ -8,13 +8,13 @@
   }
   
   .sidebar {
-    width: 15vw;
+    width: 13vw;
     height: 100vh;
-    background-color: var(--sidebar-bg);
+    background-color:#1D1D1D !important;
     color: var(--sidebar-text);
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    /* padding: 5px; */
     transition: width 0.3s ease;
     position: relative;
   }
@@ -35,16 +35,18 @@
   
  .Profile-main-section{
     background-color: var(--background-light);
-padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
  }
   
   .profile-section {
     width: 100%;
+    height: 42px;
     background-color: var(--sidebar-highlight);
     margin: 2rem 0;
     margin-bottom: 1rem;
     border-radius: 50px;
-    padding: 5px;
+    /* padding: 5px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,38 +66,59 @@ padding: 10px;
  
   
   .create-button {
-    background-color: var(--sidebar-highlight);
-    color: var(--sidebar-text);
-    border: none;
-    border-radius: 8px;
-    padding: 10px;
+    padding: 5px;
     width: 100%;
-    font-size: 14px;
+    font-size: var(--font-size-large);
     cursor: pointer;
+    border:1px solid #753FE2; 
+    border: 1px solid transparent;
+    border-image: linear-gradient(to left,  #2DF8FE 20%, #e115f3 100%) 1;
+    color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    border-radius: 10px;
+
+
   }
-  
+  .create-Battle{
+    border-radius: 10px;
+    margin: 0.5rem 4% ;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to left, #2DF8FE 0%, #e115f3 100%) 1;
+    background-color: #1F2441 !important;
+    overflow: hidden; 
+    font-weight: 700;
+
+  }
+  .create-Battle span{
+    color: var(--button-bg) !important;
+}
+.nav-links{
+    padding: 0;
+    margin: 0;
+}
   .nav-links ul {
     list-style: none;
     padding: 0;
-    background-color: var(--background-light);
   }
   
   .nav-item {
     display: flex;
     align-items: center;
-    /* padding: 10px 0; */
+    padding: 5px 10px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 11px;
+    font-weight: 300;
   }
   .nav-item a{
     color: var(--sidebar-text);
     text-decoration: none;
-    padding: 5px;
+    width: 100%;
+    /* padding: 5px; */
   }
   
   .nav-link {
-    display: flex;
-    align-items: center;
+  
     color: var(--sidebar-text);
     text-decoration: none;
     padding: 8px;
@@ -108,8 +131,10 @@ padding: 10px;
   }
   
   .nav-icon {
-    font-size: 18px;
+    font-size: 20px;
     margin-right: 12px;
+    color: #5571DB;
+    
   }
   
   .nav-text {
