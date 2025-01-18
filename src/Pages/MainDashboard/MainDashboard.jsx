@@ -8,6 +8,8 @@ import MyLibrary from "../../components/MyLibrary/MyLibrary";
 import HostedSessions from "../../components/HostedSession/HostedSession";
 import McqPanel from "../../components/McqPanel/McqPanel";
 import Leaderboard from "../../components/Leaderboard/Leaderboard";
+import Sidebar from "../../components/Sidebar/Sidebar";
+import Header from "../../components/Header/Header";
 
 const MainComponent = () => {
   const [activeTabLeft, setActiveTabLeft] = useState("myLibrary");
@@ -22,8 +24,14 @@ const MainComponent = () => {
   };
 
   return (
+    <><div>
+ <Header />
+    </div>
+         
+
     <div className="main-container">
       {/* Left Section */}
+      <Sidebar/>
       <div
         className="left-section"
         style={{ width: `${dividerPosition}%` }}
@@ -82,6 +90,7 @@ const MainComponent = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

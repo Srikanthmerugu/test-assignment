@@ -17,10 +17,18 @@
     color: #ca6704;
     font-weight: bold;
   }
+  .medal-rank{
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    width: 50px;
+  
+  }
  
   
   .top-three {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 20px;
     margin: 20px 0;
@@ -31,9 +39,15 @@
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    width: 150px;
+    width: 25%;
+    height: 20vh;
     position: relative;
+    overflow: hidden;
   }
+  .top-card.rank-2 {
+    width: 28%;
+    height: 25vh;
+}
   .top-card-theme{
     display: flex;
     align-items: center;
@@ -132,5 +146,119 @@
   
   .coins {
     color: #fdc727;
+  }
+  @media only screen and (max-width: 767px) {
+    .leaderboard-container {
+      padding: 10px;
+    }
+  
+    .leaderboard-header {
+      width: 100%;
+      font-size: 1.5rem;
+      padding: 10px 0;
+    }
+  
+    .top-three {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .top-card {
+      width: 80%;
+      padding: 15px;
+    }
+  
+    .medal {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .other-leaderboard {
+      height: auto;
+      max-height: 40vh;
+      overflow-y: auto;
+    }
+  
+    .table-header span {
+      padding: 0 10px;
+      font-size: 0.9rem;
+    }
+  
+    .table-row {
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .player-info {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+  
+    .rank {
+      font-size: 1rem;
+    }
+  
+    .theme,
+    .coins {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .leaderboard-container {
+      padding: 15px;
+      margin-bottom: 5%;
+    }
+  
+    .leaderboard-header {
+      width: 80%;
+      font-size: 1.8rem;
+      /* height: ; */
+      padding: 15px 0;
+    }
+  
+    .top-three {
+      gap: 15px;
+    }
+  
+    .top-card {
+      width: 200px;
+      padding: 15px;
+    }
+  
+    .medal {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .other-leaderboard {
+      height: auto;
+      max-height: 40vh;
+      overflow-y: auto;
+    }
+  
+    .table-header span {
+      padding: 0 30px;
+    }
+  
+    .table-row {
+      padding: 15px;
+      align-items: center;
+    }
+  
+    .player-info {
+      gap: 10px;
+    }
+  
+    .rank {
+      font-size: 1.2rem;
+    }
+  
+    .theme,
+    .coins {
+      font-size: 1rem;
+    }
   }
   

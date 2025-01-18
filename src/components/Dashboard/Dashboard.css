@@ -19,6 +19,6 @@
     background-color: black;
 }
 .dashboard-sidebar{
-    height: 100vh !important;
+    /* height: 100vh !important; */
     background-color: var(--background-light);
 }

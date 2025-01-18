@@ -125,3 +125,109 @@
     background-color: #8854c0;
   }
   
+
+  @media only screen and (max-width: 767px) {
+    .hosted-session-container {
+      padding: 10px;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .genre-dropdown {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .search-input {
+      width: 100%;
+      padding: 10px;
+      font-size: 11px;
+    }
+  
+    .search-icon {
+      position: absolute;
+      right: 15px;
+      bottom:0px;
+    }
+  
+    .cards-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .hosted-card {
+      width: 95%;
+      margin: 0 auto;
+      padding: 10px;
+    }
+  
+    .card-title {
+      font-size: 1rem;
+    }
+  
+    .session-details {
+      font-size: 12px;
+    }
+  
+    .card-genre,
+    .hosted-on {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .hosted-session-container {
+      padding: 15px;
+    }
+  
+    .search-bar {
+      gap: 10px;
+    }
+  
+    .genre-dropdown {
+      padding: 12px;
+      font-size: 16px;
+    }
+  
+    .search-input {
+      padding: 12px;
+      font-size: 16px;
+    }
+  
+    .cards-container {
+      gap: 10px;
+    }
+  
+    .hosted-card {
+      width: 45%;
+      padding: 12px;
+    }
+  
+    .card-title {
+      font-size: 1.1rem;
+    }
+  
+    .session-details {
+      font-size: 12px;
+    }
+  
+    .card-genre,
+    .hosted-on {
+      font-size: 0.8rem;
+    }
+  
+    .btn {
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+  }
+  

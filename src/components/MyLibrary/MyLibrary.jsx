@@ -6,10 +6,11 @@ import noImg from './no-img.png'
 
 
 
+
 const MyLibrary = () => {
   return (
     <div className="library-wrapper">
-      <h2>My Library</h2>
+      <h2></h2>
       <div className="items-list">
         {[1, 2, 3].map((item, index) => (
           <div key={index} className="item-card">

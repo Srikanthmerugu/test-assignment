@@ -1,12 +1,15 @@
 import React from 'react';
 import './Leaderboard.css';
 import profile from './Profle.png'
+import medalImage1 from './rank-img/Frame.png';
+import medalImage2 from './rank-img/Frame (1).png';
+import medalImage3 from './rank-img/Frame (2).png';
 
 const Leaderboard = () => {
   const topThree = [
-    { rank: 1, name: 'Jane Doe', email: 'pr******@***', theme: 'Games', coins: 3454, medal: 'gold' },
-    { rank: 2, name: 'Jane Doe', email: 'pr******@gmail.com', theme: 'Marvel', coins: 2530, medal: 'silver' },
-    { rank: 3, name: 'Jane Doe', email: 'pr******@***', theme: 'Anime', coins: 2950, medal: 'bronze' },
+    { rank: 1, name: 'Jane Doe', email: 'pr******@***', theme: 'Games', coins: 3454, medal:  medalImage2 },
+    { rank: 2, name: 'Jane Doe', email: 'pr******@gmail.com', theme: 'Marvel', coins: 2530, medal: medalImage1 },
+    { rank: 3, name: 'Jane Doe', email: 'pr******@***', theme: 'Anime', coins: 2950, medal: medalImage3 },
   ];
 
   const others = [
@@ -25,7 +28,8 @@ const Leaderboard = () => {
       <div className="top-three">
         {topThree.map((user) => (
           <div key={user.rank} className={`top-card rank-${user.rank}`}>
-            <div><img src={profile} /></div>
+<img src={user.medal} alt={`Medal for rank ${user.rank}`} className="medal-rank" />
+<div><img src={profile} /></div>
             <p className="name">{user.name}</p>
             <p className="email">{user.email}</p>
             <div className='top-card-theme'>

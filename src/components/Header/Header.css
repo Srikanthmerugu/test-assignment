@@ -1,11 +1,45 @@
 .header-container{
     background-color: var(--background-light);
     width: 100vw;
+    height: 8vh;
+
 } 
 .header-container img{
-width: 100px;
+/* width: 100px; */
 color: white;
 height: 6vh;
 padding: 5px;
 
 }
+
+@media only screen and (max-width: 767px) {
+    .header-container{
+        background-color: var(--background-light);
+        width: 100vw;
+        height: 14vh;
+        margin: 0 auto;
+    } 
+    .header-container img{
+        margin: 0 auto;
+        color: white;
+        height: 7vh;
+        padding: 15px;
+    
+    }
+}
+@media only screen and (min-width: 767px) and (max-width :1023px){
+    .header-container{
+        background-color: var(--background-light);
+        width: 100vw;
+        height: 16vh;
+    } 
+    .header-container img{
+    width: 100%;
+    color: white;
+    height: 10vh;
+    padding: 15px;
+    
+    }
+
+}
+    
