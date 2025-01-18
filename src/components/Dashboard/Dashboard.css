@@ -1,4 +1,11 @@
+.Dashboard-Main-container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: red; */
+}
 .Dashboard-container{
+   
     display: flex;
     flex-direction: row;
     
@@ -7,4 +14,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100vw !important;
+    height: 93vh !important;
+    background-color: black;
+}
+.dashboard-sidebar{
+    height: 100vh !important;
+    background-color: var(--background-light);
 }

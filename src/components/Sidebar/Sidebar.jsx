@@ -41,9 +41,9 @@ const Sidebar = () => {
       </button>
       {/* Sidebar Toggle close*/}
 
-
+{isOpen && ( <div>
       {/* Profile Section start*/}
-      <div className="Profile-main-section">
+      <div className="Profile-main-sectio">
         {isOpen && (
           <div className="profile-section">
             <div>
@@ -187,7 +187,7 @@ const Sidebar = () => {
         
       
         
-        <div className="Profile-main-section">
+        {/* <div className="Profile-main-section">
           <li className="nav-item">
             <Link to="/library">
               <span className="nav-icon">
@@ -198,7 +198,7 @@ const Sidebar = () => {
           </li>
         
         
-        </div>
+        </div> */}
         </div>}
 
 
@@ -217,6 +217,9 @@ const Sidebar = () => {
           </button>
         </div>
       )}
+
+      
+    </div>)}
     </div>
   );
 };

@@ -1,29 +1,25 @@
-
-import React from 'react'
-import './Dashboard.css'
-import Sidebar from '../Sidebar/Sidebar'
-import Library from '../Library/Library'
-import Header from '../Header/Header'
+import React from "react";
+import "./Dashboard.css";
+import Sidebar from "../Sidebar/Sidebar";
+import Header from "../Header/Header";
+import MainDashboard from "../../Pages/MainDashboard/MainDashboard";
 
 const Dashboard = () => {
   return (
-    <div>
-        <div>
-            <Header />
+    <div className="Dashboard-Main-container">
+   
+        <Header />
+      <div className="Dashboard-container">
+        <div className="dashboard-sidebar">
+        
+          <Sidebar />
         </div>
-    <div className='Dashboard-container'>
-        <div>  <Sidebar /></div>
-        <div className='Dashboard-sub-container'> 
-        <div> <Library /> </div>
-        {/* <div> <Library /> </div> */}
-        
-         </div>
-        
-    
-     
+        <div className="Dashboard-sub-container">
+          <MainDashboard />
+        </div>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;

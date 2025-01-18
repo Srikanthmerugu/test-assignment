@@ -1,0 +1,162 @@
+Main container
+.split-screen-container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+/* Left and right panels */
+.left-panel,
+.right-panel {
+  padding: 20px;
+  overflow: auto;
+  background-color: #1f2441;
+  color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Divider styles */
+.divider {
+  width: 5px;
+  background-color: #fdbe27;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  cursor: ew-resize;
+  z-index: 10;
+  transition: background-color 0.3s;
+}
+
+.divider:hover {
+  background-color: #ffc857;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #fdbe27;
+  color: #000;
+}
+
+/* Items list */
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-card {
+  display: flex;
+  background-color: #292d4a;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 20px;
+}
+
+
+
+.item-details {
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.item-meta,
+.item-meta-small,
+.item-date {
+  font-size: 12px;
+  color: #bbb;
+}
+
+.item-actions .btn {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+}
+
+.play-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* .delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+} */
+
+/* MCQ styles */
+.mcq-content {
+  padding: 20px;
+  background-color: #292d4a;
+  border-radius: 10px;
+}
+
+.mcq-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.option {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #444;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.option:hover {
+  background-color: #666;
+}
+
+.exit-btn,
+.submit-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.exit-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.Edit-play-icon{
+
+    font-size: 20px;
+    margin-right: 12px;
+    color: #5571DB;
+    
+  
+}

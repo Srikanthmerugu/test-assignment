@@ -1,0 +1,127 @@
+/* Hosted Session CSS */
+.hosted-session-container {
+    /* background-color: #1c1b22; */
+    /* padding: 20px; */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .genre-dropdown {
+    background-color: #8854c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+  }
+  
+  .search-input {
+    flex: 1;
+    background-color: #2d2b34;
+    border: none;
+    padding: 12px 15px;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .search-icon {
+    color: #bcbcbc;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .hosted-card {
+    width: 47%;
+    background-color: #1c1b22;
+    border: 2px solid #4444a8;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-content {
+    margin-bottom: 5px;
+  }
+  
+  .card-title {
+    color: #e1bd43;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .session-name {
+    color: #0bd88f;
+    margin: 8px 0;
+  }
+  
+  .session-details {
+    color: #bcbcbc;
+    font-size: 10px;
+  }
+  
+  .card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
+  }
+  
+  .card-type {
+    color: #739af9;
+    margin-bottom: 5px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card-genre,
+  .hosted-on {
+    color: #bcbcbc;
+    font-size: 0.7rem;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .btn {
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+  .host-game-btn {
+    background-color: #1677c7;
+  }
+  
+  .leaderboard-btn {
+    background-color: #8854c0;
+  }
+  
